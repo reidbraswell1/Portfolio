@@ -16,3 +16,7 @@
     display: inline-block;
     margin-left: 1.1em;
 }
+
+.contact-list a{
+    margin-left: .5em;
+}
