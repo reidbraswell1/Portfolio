@@ -1,11 +1,22 @@
-.outer-container {
+.flex {
     display: flex;
-    border: 1px solid black;
+    flex-direction: row;
+    border: 1px solid blue;
+    margin: 0 .5em 0 .5em;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
     margin: 0 .5em 0 .5em;
 }
 
 .portfolio-image {
     width: 10%;
+    float: left;
 }
 
 .contact-list {
@@ -21,5 +32,13 @@
     margin-left: .5em;
 }
 body {
-    background-color: white;
+    background-color: cornsilk;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid pink;
+    margin: 0 .5em 0 .5em;
 }
