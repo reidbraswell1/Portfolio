@@ -1,3 +1,4 @@
+@import url('https://fonts.goggleapis.com/css?family=Orbitron');
 /* Declare Variables */
 :root {
     --my-margin: 2% 30% 0 30%;
@@ -45,6 +46,14 @@ body {
 
 }
 
+.proficiencies-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--my-margin);
+    border-bottom: var(--border-bottom);
+}
+
 .experience-container {
     display: flex;
     flex-direction: column;
@@ -88,4 +97,18 @@ body {
 .contact-container {
     display: flex;
     margin: var(--my-margin);
+}
+
+.extras-container {
+    display: flex;
+    margin: var(--my-margin);
+}
+
+#clock {
+    font-family: 'Orbitron',sans-serif;
+    color: #66ff99;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
