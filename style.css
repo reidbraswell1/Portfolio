@@ -21,6 +21,17 @@
 
 }
 
+/* 600px or less */
+@media screen and (max-width: 600px) {
+    .description-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1% 10% 0 10%;
+        border-bottom: 1px solid black;
+    }
+}
+
 .experience-container {
     display: flex;
     flex-direction: column;
@@ -28,11 +39,31 @@
     margin: 1% 30% 0 30%;
     border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 600px) {
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1% 10% 0 10%;
+        border-bottom: 1px solid black;
+    }
+}
+
 .education-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1% 30% 0 30%;
+}
+
+@media screen and (max-width: 600px) {
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1% 10% 0 10%;
+    }
 }
 
 .portfolio-image {
