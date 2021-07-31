@@ -1,8 +1,28 @@
-.flex {
-    display: flex;
-    flex-direction: row;
-    border: 1px solid blue;
-    margin: 0 .5em 0 .5em;
+/* Declare Variables */
+:root {
+    --my-margin: 2% 30% 0 30%;
+    --border-bottom: 1px solid black;
+    --contact-list-li: inline-block;
+}
+
+body {
+    background-color: cornsilk;
+}
+
+/* 992px or less */
+@media screen and (max-width: 992px) {
+    :root {
+        --my-margin: 2% 17% 0 17%;
+        --contact-list-li: block;
+    }
+}
+
+/* 600px or less */
+@media screen and (max-width: 600px) {
+    :root {
+        --my-margin: 2% 7% 0 7%;
+        --contact-list-li: block;
+    }
 }
 
 .header-container {
@@ -12,85 +32,60 @@
     align-items: center;
 }
 
+.portfolio-image {
+    width: 10%;
+}
+
 .description-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1% 30% 0 30%;
-    border-bottom: 1px solid black;
+    margin: var(--my-margin);
+    border-bottom: var(--border-bottom);
 
-}
-
-/* 600px or less */
-@media screen and (max-width: 600px) {
-    .description-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1% 10% 0 10%;
-        border-bottom: 1px solid black;
-    }
 }
 
 .experience-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1% 30% 0 30%;
-    border-bottom: 1px solid black;
-}
-
-@media screen and (max-width: 600px) {
-    .experience-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 1% 10% 0 10%;
-        border-bottom: 1px solid black;
-    }
+    margin: var(--my-margin);
+    border-bottom: var(--border-bottom);
 }
 
 .education-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1% 30% 0 30%;
+    margin: var(--my-margin);
+    border-bottom: var(--border-bottom);
 }
 
-@media screen and (max-width: 600px) {
-    .education-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 1% 10% 0 10%;
-    }
-}
 
-.portfolio-image {
-    width: 10%;
-    float: left;
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: var(--my-margin);
+    border-bottom: var(--border-bottom);
 }
 
 .contact-list {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .contact-list li {
-    display: inline-block;
-    margin-left: 1.1em;
+    display: var(--contact-list-li);
+    margin-left: .6em;
 }
 
 .contact-list a{
     margin-left: .5em;
 }
-body {
-    background-color: cornsilk;
-}
 
 .contact-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid pink;
-    margin: 0 .5em 0 .5em;
+    margin: var(--my-margin);
 }
