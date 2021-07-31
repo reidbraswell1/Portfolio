@@ -1,13 +1,13 @@
 function currentTime() {
     let date = new Date();
-    let ampm;
     let hour = date.getHours();
     let min = date.getMinutes();
     let sec = date.getSeconds();
+    let ampm = updateAmPm(hour);
+    hour = updateHour(hour);
     hour = updateTime(hour);
     min = updateTime(min);
     sec = updateTime(sec);
-    ampm = updateAmPm(hour);
     document.getElementById("clock").innerText = hour + " : " + min + " : " + sec + " " + ampm;
     let t = setTimeout(function () {
         currentTime()
@@ -23,7 +23,7 @@ function updateTime(k) {
     }
 }
 
-function updateAmPm(hour) {
+function updateAmPm(hour, min) {
     let ampm;
 
     if (hour > 12) {
@@ -38,6 +38,14 @@ function updateAmPm(hour) {
         ampm = "AM";
     }
     return ampm;
+}
+
+function updateHour(hour) {
+
+    if (hour > 12) {
+        hour = hour - 12;
+    }
+    return hour;
 }
 
 currentTime();
