@@ -10,8 +10,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
     margin: 0 .5em 0 .5em;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 30% 0 30%;
+
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1% 30% 0 30%;
+}
+.education-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1% 30% 0 30%;
 }
 
 .portfolio-image {
