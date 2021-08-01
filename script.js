@@ -36,9 +36,9 @@ function updateAmPm(hour, min) {
         hour = hour - 12;
         ampm = "PM";
     } else if (hour == 12 && min == 0) {
-        ampm = "Noon";
+        ampm = "NOON";
     } else if (hour == 00 && min == 0) {
-        ampm = "Midnight";
+        ampm = "MIDNIGHT";
     }
     else {
         ampm = "AM";
